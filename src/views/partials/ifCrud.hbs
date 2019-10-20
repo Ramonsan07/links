@@ -1,0 +1,15 @@
+<!--si uno de las acciones del crud se ejecuta esto displayea un mensaje descriptivo del tipo de accion!-->
+{{#if successCrud}}
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-md-4 mx-auto">
+                <div class="alert alert-success alert-dismisssable fade show" role="alert">
+                    {{successCrud}}
+                    <button type="button" aria-label="close" data-dismiss='alert' class="close">
+                        <span aria-hidden="true" >&otimes;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
